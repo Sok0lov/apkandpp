@@ -1,0 +1,44 @@
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: var(--swiper-scrollbar-sides-offset, 4.2%);
+  bottom: var(--swiper-scrollbar-bottom, 55px);
+  top: var(--swiper-scrollbar-top, auto);
+  z-index: 50;
+  height: 8px;
+  width: 1288px;
+}
+
+@media (max-width: 1600px) {
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 980px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 715px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: var(--swiper-scrollbar-bottom, 25px);
+    width: calc(100% - 30px);
+  }
+}
+
+.swiper-scrollbar-drag {
+  background-color: #FD3C76;
+  cursor: pointer;
+  width: 420px;
+}
+
+.swiper-scrollbar {
+  background: #F4F4F6;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    height: auto;
+  }
+}

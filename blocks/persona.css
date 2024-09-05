@@ -1,0 +1,159 @@
+.persona {
+  margin-bottom: 126px;
+}
+
+@media (max-width: 1280px) {
+  .persona {
+    margin-bottom: 50px;
+  }
+}
+
+.persona__container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1226px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .persona__container {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+}
+
+.persona__img {
+  width: 370px;
+  height: 500px;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+
+@media (max-width: 1280px) {
+  .persona__img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .persona__img {
+    width: 290px;
+    height: 420px;
+  }
+}
+
+.persona__detail {
+  width: 803px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+  .persona__detail {
+    width: 100%;
+  }
+}
+
+.persona__detail-title {
+  color: #1F2533;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin: 30px 0 40px 0;
+  position: relative;
+  width: fit-content;
+}
+
+@media (max-width: 1280px) {
+  .persona__detail-title  {
+    font-size: 44px;
+    margin: 30px 0 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .persona__detail-title  {
+    font-size: 34px;
+    line-height: 44px;
+    margin: 30px 0 30px 41px;
+  }
+}
+
+.persona__detail-title:before {
+  content: "";
+  position: absolute;
+  right: -58px;
+  top: 0;
+  width: 25px;
+	height: 70px;
+  background-image: url(../image/icon/Vector-pink.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .persona__detail-title:before {
+    left: -41px;
+  }
+}
+
+.persona__detail-fullname {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.persona__detail-achievements {
+  margin-bottom: 28px;
+}
+
+.persona__detail-achiev {
+  color: #FD3C76;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 0 0 0 32px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .persona__detail-achiev {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.persona__detail-achiev:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #FD3C76;
+  border-radius: 100%;
+  position: absolute;
+  left: 12px;
+  top: calc(50% - 2px);
+}
+
+.persona__detail-achiev:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.persona__detail-interview {
+  color: #1F2533;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 20px;
+  background: #F3F6FF;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+.persona__detail-interview {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,18 @@
+@import url(../vendor/reset.css);
+
+/*fonts*/
+@import url(../vendor/fonts.css);
+
+/*blocks*/
+
+@import url(../blocks/about.css);
+@import url(../blocks/breadcrumbs.css);
+@import url(../blocks/info.css);
+@import url(../blocks/statistic.css);
+@import url(../blocks/persona.css);
+@import url(../blocks/swiper.css);
+
+
+body {
+  font-family: 'Museo Sans Cyrl';
+}

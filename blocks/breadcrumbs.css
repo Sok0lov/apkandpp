@@ -1,0 +1,35 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 1600px) {
+  .breadcrumbs {
+    margin-left: -40px;
+  }
+}
+
+.breadcrumbs__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 18px;
+  color: #878787;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  margin-right: 5px;
+  color: #215FFF;
+  position: relative;
+}
+
+.breadcrumbs__link:after {
+  content: "/";
+  cursor: default;
+  position: absolute;
+  color: #878787;
+  right: -16px;
+  top: -1px;
+}

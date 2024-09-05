@@ -1,0 +1,185 @@
+.about {
+  position: relative;
+  height: 840px;
+  padding: 40px 0 60px;
+  margin-bottom: 60px; 
+}
+
+@media (max-width: 1280px) {
+  .about {
+    height: 100%;
+  }
+}
+
+.about__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about__container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .about__container {
+    padding: 0 15px;
+  }
+}
+
+.about__title {
+  color: #1F2533;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  margin: 0 0 70px 9px;
+  position: relative;
+}
+@media (max-width: 1600px) {
+  .about__title {
+    margin: 0 0 70px 62px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about__title {
+    margin: 0 0 30px 62px;
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 34px;
+    line-height: 44px;
+    margin: 0 0 30px 41px;
+  }
+}
+
+.about__title:before {
+  content: "";
+  position: absolute;
+  left: -61px;
+  top: 3px;
+  width: 25px;
+	height: 70px;
+  background-image: url(../image/icon/Vector.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .about__title:before {
+    left: -41px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1600px) {
+  .about__wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about__wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+.about__info {
+  margin-right: 72px;
+  width: 330px;
+}
+
+@media (max-width: 420px) {
+  .about__info {
+    margin-right: 0;
+    width: fit-content;
+    max-width: 270px;
+  }
+}
+
+.about__info-items {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 40px;
+}
+
+.about__info-item {
+  color: #262626;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  width: fit-content; 
+  position: relative;
+}
+
+@media (max-width: 420px) {
+  .about__info-item {
+    width: 250px;
+  }
+}
+
+.about__info-item:after {
+  content: "";
+  position: absolute;
+  right: -32px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../image/icon/Arrow.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about__info-item:not(:last-of-type) {
+  margin-bottom: 26px;
+}
+
+.about__image {
+  border-radius: 10px;
+  width: 800px;
+  height: 500px;
+}
+
+@media (max-width: 1280px) {
+  .about__image {
+    width: 100%;
+    height: 500px;  
+  }
+}
+
+@media (max-width: 768px) {
+  .about__image {
+    height: 300px;  
+  }
+}
+
+.about__img {
+  width: 100%;
+  height: 500px;  
+}
+
+@media (max-width: 1280px) {
+  .about__img {
+    width: 100%;
+    height: 500px;  
+  }
+}
+
+@media (max-width: 768px) {
+  .about__img {
+    height: 300px;  
+  }
+}
