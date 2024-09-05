@@ -62,17 +62,21 @@
 }
 
 .statistic__slider {
-  max-width: 1640px;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 15%;
   overflow: hidden;
   display: grid;
   padding: 43px 0 60px 69px;
   position: relative;
   cursor: pointer;
 }
-
+@media (min-width: 1920px) {
+  .statistic__slider {
+    margin: 0 0 0 20%;
+  }
+}
 @media (max-width: 1600px) {
   .statistic__slider {
+    margin: 0;
     padding: 43px 40px 60px 69px;
   }
 }
